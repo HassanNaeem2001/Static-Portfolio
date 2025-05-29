@@ -1,0 +1,142 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+
+}
+
+
+/* Glowing effect */
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #9333ea 0%, transparent 60%);
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  z-index: 0;
+  opacity: 0.7;
+}
+
+
+/* Content layer */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Rowdies", sans-serif;
+
+}
+
+.bgmine{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.7px);
+-webkit-backdrop-filter: blur(9.7px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+.mylogotext{
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+.btnsearch{
+    background-color: #9333ea;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+.herosection{
+    height:500px;
+    display: flex;
+    align-items: center;
+}
+.herosection2{
+  height: 500px;
+  background-image: url('Images/ChatGPT_Image_May_29__2025__06_54_39_PM-removebg-preview.png');
+  background-size: cover;
+  background-position: top center;
+
+}
+.btnsecond{
+  background-color: transparent;
+  color: white;
+  border: #9333ea solid 3px;
+}
+.clientsdiv{
+  background: rgba(255, 255, 255, 0.16);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.7px);
+-webkit-backdrop-filter: blur(9.7px);
+border: 1px solid rgba(255, 255, 255, 0.05);
+width: 55%;
+height: 60px;
+margin-top: 20px;
+}
+.clientimg{
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  left: 20px;
+  border: 2px solid white;
+  
+}
+.textclient{
+  position: relative;
+  top: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.clientsdiv:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.btnsearch:hover{
+  background-color: transparent;
+    color: white;
+  border: #9333ea solid 3px;
+}
+.btnsecond:hover{
+  background-color: #9333ea;
+
+}
+@media(max-width:500px)
+{
+  .textclient{
+    font-size: 1.5rem;
+    top: 10px;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .clientsdiv{
+    width: 90%;
+  }
+  .hideonmob{
+    display: none;
+  }
+}
