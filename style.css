@@ -4,11 +4,15 @@ body, html {
   height: 100%;
   background-color: #0d0d0d;
   font-family: 'Poppins', sans-serif;
+  
+}
+body{
+  overflow-x: hidden;
 }
 
 .background {
   position: relative;
-  height: 100vh;
+  height: auto;
 
 }
 
@@ -27,12 +31,25 @@ body, html {
   opacity: 0.7;
 }
 
+.glow2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #9333ea 0%, transparent 60%);
+  top: 40%;
+  right: -30%;
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  z-index: 0;
+  opacity: 0.7;
+}
 
 /* Content layer */
 .content {
   position: relative;
   z-index: 1;
   text-align: center;
+  height: auto;
 }
 
 h3 {
@@ -124,6 +141,63 @@ margin-top: 20px;
   background-color: #9333ea;
 
 }
+
+.statsdiv{
+  height: auto;
+  background-color: #100c14;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+.herocontent{
+  height: auto;
+}
+.highlightedtext{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    background-color: #9333ea;
+    padding: 7px;
+    
+}
+.headingsother
+{
+  font-size: 35px;
+}
+.placeholderdivs{
+  height: 300px;
+  background-color: grey;
+  border-radius: 10px;
+}
+.workingprocesspara{
+  color: lightgrey;
+}
+.strategydivs{
+  height: 250px;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  padding: 2px;
+}
+.subtext{
+  font-size: 12px;;
+}
+.stdiv1{
+  position: relative;
+  bottom: 40px;
+}
+.icondiv{
+  height: 60px;
+  border-radius: 10px;
+  width: 60px;
+  background-color: #9333ea;
+  margin: 10px;
+  position: relative;
+}
 @media(max-width:500px)
 {
   .textclient{
@@ -139,4 +213,24 @@ margin-top: 20px;
   .hideonmob{
     display: none;
   }
+  .headingsother{
+    font-size: 25px;
+  }
+  
+}
+@media(max-width:650px)
+{
+  .statsdiv{
+    height: auto;
+    width: 90%;
+    margin: auto;
+  }
+  
+}
+@media(max-width:800px)
+{
+ .stdiv1{
+  position: relative;
+  bottom: 0px;
+}
 }
