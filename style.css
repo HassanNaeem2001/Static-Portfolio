@@ -43,6 +43,19 @@ body{
   z-index: 0;
   opacity: 0.7;
 }
+.glow3 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #9333ea 0%, transparent 60%);
+  top: 250%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.7;
+
+}
 
 /* Content layer */
 .content {
@@ -197,6 +210,23 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #9333ea;
   margin: 10px;
   position: relative;
+}
+.bghaveaproject
+{
+  height: auto;
+  background-color: #9333ea;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bggroup{
+  height: 350px;
+ 
+  background-image: url('Images/group-removebg-preview.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
 }
 @media(max-width:500px)
 {
