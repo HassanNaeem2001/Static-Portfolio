@@ -30,7 +30,8 @@
         <div class="content">
             <div class="container mt-3 px-4 navmaindiv">
                 <!--Navbar For Both Screens-->
-                <nav class="navbar navbar-expand-lg navbar-dark bgmine">
+               <div class="navbardivpositionwala">
+                  <nav class="navbar navbar-expand-lg navbar-dark bgmine">
                     <div class="container">
                         <a class="navbar-brand mylogotext" href="#">Hassan Bin Naeem</a>
                         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -41,23 +42,19 @@
                         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
                             <ul class="navbar-nav mt-2 mt-lg-1">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" aria-current="page">Home
+                                    <a class="nav-link" href="#hero" aria-current="page">Home
                                         <span class="visually-hidden">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About </a>
+                                    <a class="nav-link" href="#stats">About </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact </a>
+                                    <a class="nav-link" href="#contact">Contact </a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects </a>
                                 </li>
+                               
                             </ul>
 
                         </div>
@@ -69,19 +66,20 @@
                         </form>
                     </div>
                 </nav>
+               </div>
             </div>
 
             <!--Hero Content Start-->
             <div class="container herocontent text-white ">
                 <div class="row">
-                    <div class="col-lg-8 herosection">
+                    <div class="col-lg-8 herosection" id="hero">
                         <div class="text-start">
                             <p>This is Hassan Naeem</p>
                             <h3>Web / Mobile App Designer & Developer </h3>
                             <p>With 5+ Years of Experience</p>
 
-                            <button class="btn btnsearch text-white">Say Hello</button>
-                            <button class="btn btnsecond mx-3">Work Demo</button>
+                            <button class="btn btnsearch text-white btn-sm">Say Hello</button>
+                            <button class="btn btnsecond mx-3 btn-sm">Download Resume</button>
                             <br>
                             <div class="clientsdiv">
                                 <div class="row">
@@ -116,22 +114,22 @@
                     <div class="col-lg-4 herosection2 "></div>
                 </div>
             </div>
-            <div class="container statsdiv">
+            <div class="container statsdiv" id="stats">
                 <div class="row text-center text-light">
                     <div class="col-lg-3 col-6">
-                        <h3>5+</h3>
+                        <h3 class="numtext">5+</h3>
                         <p>Years Of Experience</p>
                     </div>
                     <div class="col-lg-3 col-6">
-                        <h3>3+</h3>
+                        <h3 class="numtext">3+</h3>
                         <p>Awards Winner</p>
                     </div>
                     <div class="col-lg-3 col-6">
-                        <h3>10+</h3>
+                        <h3 class="numtext">10+</h3>
                         <p>Projects Completed</p>
                     </div>
                     <div class="col-lg-3 col-6">
-                        <h3>30+</h3>
+                        <h3 class="numtext">30+</h3>
                         <p>Happy Clients</p>
                     </div>
                 </div>
@@ -145,23 +143,23 @@
     </div>
 
     <section>
-        <div class="container mt-5">
+        <div class="container mt-5" id="projects">
             <p class="text-center text-light">RECENT WORK</p>
             <h4 class="text-center text-light headingsother">Take a look at my recent <br> <span class="highlightedtext"
                     style="position: relative;top: 10px;">Design Ventures</span></h4>
             <div class="row mt-5">
                 <div class="col-lg-6 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj1" onclick="window.location.href='https://vbstudios.org/'">
 
                     </div>
                 </div>
                 <div class="col-lg-3 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj2" onclick="window.location.href='https://propertyhouseuae.com'">
 
                     </div>
                 </div>
                 <div class="col-lg-3 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj3" onclick="window.location.href='https://bakersbite.netlify.app'">
 
                     </div>
                 </div>
@@ -169,17 +167,17 @@
             </div>
             <div class="row mt-lg-3">
                 <div class="col-lg-4 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj4" onclick="window.location.href='https://hassannaeem.netlify.app'">
 
                     </div>
                 </div>
                 <div class="col-lg-4 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj5" onclick="window.location.href='https://propertyhouseuae.com'">
 
                     </div>
                 </div>
                 <div class="col-lg-4 mt-2">
-                    <div class="placeholderdivs">
+                    <div class="placeholderdivs proj6" onclick="window.location.href='https://vbstudios.org/project/bjorn/">
 
                     </div>
                 </div>
@@ -273,7 +271,7 @@
         </div>
     </section>
     <section>
-        <div class="container mt-5 bghaveaproject">
+        <div class="container mt-5 bghaveaproject" id="contact">
             <div class="row">
                 <div class="col-lg-7">
                     <h3>Have a project ?</h3>
@@ -294,7 +292,7 @@
         <div class="container p-4 mt-4">
             <div class="row">
                 <div class="col-lg-4 text-center my-3 text-white" style="font-size:12px">
-                    @ 2024 by Hassan Bin Naeem. All rights reserved.
+                    &copy; 2025 by Hassan Bin Naeem. All rights reserved.
                 </div>
                 <div class="col-lg-4 text-center my-2">
                     <h4 class="mylogotext">Hassan Bin Naeem</h4>
