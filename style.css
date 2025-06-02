@@ -181,6 +181,7 @@ margin-top: 20px;
   background-color: grey;
   border-radius: 10px;
   cursor: pointer;
+  border: 1px solid grey;
 }
 .workingprocesspara{
   color: lightgrey;
